@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ryrg4sr8a-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ryrg4sr8a-nodejs 
+  name: ryrg4sr8a-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: ryrg4sr8a-nodejs 
